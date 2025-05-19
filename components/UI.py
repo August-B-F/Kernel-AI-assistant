@@ -139,32 +139,8 @@ class Tab:
                     logo_rect = self.logo.get_rect(center=(200, SCREEN_HEIGHT // 2 + 20))
                     surface.blit(self.logo, logo_rect)
                     
-                    #know text that says: 
-                    # Code by Adolf Nipple.
-                    # Design by Stevie Wonder.
-                    # Kernel driver by Patrick Star. 
-                    # AI by Elon Musk.
-                    # Yes, i know impressive. 
-                    # Rights are reserved to the respective owners, not for commercial use.
-
-                    credits_text = BIG_FONT.render("Code by Adolf Nipple.", True, BLACK)
+                    credits_text = BIG_FONT.render("Code by August.B.F.", True, BLACK)
                     credits_text_rect = credits_text.get_rect(center=(SCREEN_WIDTH // 2 + 200, SCREEN_HEIGHT // 4 + 120))
-                    surface.blit(credits_text, credits_text_rect)
-
-                    credits_text = BIG_FONT.render("Design by Stevie Wonder.", True, BLACK)
-                    credits_text_rect = credits_text.get_rect(center=(SCREEN_WIDTH // 2 + 200, SCREEN_HEIGHT // 4 + 170))
-                    surface.blit(credits_text, credits_text_rect)
-
-                    credits_text = BIG_FONT.render("Kernel by Patrick Star.", True, BLACK)
-                    credits_text_rect = credits_text.get_rect(center=(SCREEN_WIDTH // 2 + 200, SCREEN_HEIGHT // 4 + 220))
-                    surface.blit(credits_text, credits_text_rect)
-
-                    credits_text = BIG_FONT.render("AI by Elon Musk.", True, BLACK)
-                    credits_text_rect = credits_text.get_rect(center=(SCREEN_WIDTH // 2 + 200, SCREEN_HEIGHT // 4 + 270))
-                    surface.blit(credits_text, credits_text_rect)
-
-                    credits_text = SMALL_FONT.render("Rights are reserved, not for commercial use.", True, BLACK)
-                    credits_text_rect = credits_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 4 + 420))
                     surface.blit(credits_text, credits_text_rect)
 
     def update(self, surface):
